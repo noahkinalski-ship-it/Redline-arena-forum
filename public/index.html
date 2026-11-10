@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REDLINE ARENA – forum graczy</title>
+<meta name="description" content="Polskie forum graczy: Forza Horizon 3/4/5/6, CS2, ETS2, World of Tanks, HEAT, GTA 5, benchmarki i sprzęt PC.">
+<meta name="theme-color" content="#0b0b0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M4 8h26l14 16-14 16H4l12-16z' fill='%23e4002b'/%3E%3Cpath d='M16 24l10-10v20z' fill='%230b0b0e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#view">Przejdź do treści</a>
+
+<div id="demo-banner" class="demo-banner" hidden>
+  TRYB DEMO – dane zapisują się tylko w Twojej przeglądarce. Podłącz Supabase w <code>js/config.js</code>, aby uruchomić prawdziwe forum.
+</div>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#/" aria-label="Strona główna">
+      <svg viewBox="0 0 48 48" width="36" height="36" aria-hidden="true"><path d="M4 8h26l14 16-14 16H4l12-16z" fill="#e4002b"/><path d="M16 24l10-10v20z" fill="#0b0b0e"/></svg>
+      <span class="brand-txt">REDLINE<b>ARENA</b></span>
+    </a>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <a href="#/">Start</a>
+      <a href="#/k/sprzet">Sprzęt</a>
+      <a href="#/regulamin">Regulamin</a>
+      <a id="nav-discord" href="#" target="_blank" rel="noopener">Discord</a>
+      <a id="nav-admin" href="#/admin" hidden>Panel</a>
+    </nav>
+    <form class="search" data-form="search" role="search">
+      <input name="q" type="search" placeholder="Szukaj wątków…" aria-label="Szukaj wątków" maxlength="60">
+    </form>
+    <div id="userbox" class="userbox"></div>
+  </div>
+</header>
+
+<main id="view" class="wrap" tabindex="-1"><p class="muted">Ładowanie…</p></main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div><b>REDLINE ARENA</b> – forum graczy i miłośników sprzętu PC.</div>
+    <div class="muted">Projekt fanowski. Nazwy gier są własnością ich właścicieli.</div>
+  </div>
+</footer>
+
+<div id="modal-root"></div>
+<div id="toasts" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
