@@ -5,8 +5,8 @@
  * Gdy SUPABASE_URL jest pusty, forum działa w trybie DEMO (dane w localStorage przeglądarki).
  */
 window.FORUM_CONFIG = {
-  SUPABASE_URL: "",          // np. https://abcdxyz.supabase.co
-  SUPABASE_ANON_KEY: "",     // Project Settings -> API -> anon public
+  SUPABASE_URL: "https://bhgilnjwlbwbpofushyd.supabase.co",          // np. https://abcdxyz.supabase.co
+  SUPABASE_ANON_KEY: "sb_publishable_jLnAnthdM4yx7Qn5C5qZ-w_HnLeEWo4czy",     // Project Settings -> API -> anon public
   DISCORD_INVITE: "https://discord.gg/TWOJ_KOD",   // link zaproszenia do Twojego serwera
   DISCORD_GUILD_ID: "",      // ID serwera (do widgetu online; włącz Widget w ustawieniach serwera)
   FORUM_NAME: "REDLINE ARENA",
